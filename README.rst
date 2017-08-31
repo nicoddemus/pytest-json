@@ -64,7 +64,7 @@ You can modify ``request.config._json_environment`` in a fixture
 
 .. code-block:: python
 
-  @pytest.fixture(scope='session', autouse=True):
+  @pytest.fixture(scope='session', autouse=True)
   def extra_json_environment(request):
       request.config._json_environment.append(('herp', 'derp'))
 
